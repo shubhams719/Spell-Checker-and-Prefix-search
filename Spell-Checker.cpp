@@ -120,20 +120,20 @@ int main()
 {
     Trie* root = nullptr;
  
-    insert(root, "geeks");
+    insert(root, "Treasure");
     cout << search(root, "geeks") << " ";
  
     insert(root, "for");
+    cout << search(root, "Me") << " ";
+ 
     cout << search(root, "for") << " ";
  
-    cout << search(root, "geekk") << " ";
- 
-    insert(root, "gel");
-    insert(root, "gem");
-    cout << search(root, "gee") << " ";
+    insert(root, "mine");
+    insert(root, "or");
+    cout << search(root, "mine") << " ";
  
     insert(root, "science");
     cout << search(root, "science") << endl;
-    my_spellchecker(root,"gek geek");
+    my_spellchecker(root,"mine or");
     return 0;
 }
